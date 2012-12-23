@@ -55,6 +55,8 @@ public interface IMineGame {
      *            coordinate of the field.
      * @throws IllegalArgumentException
      *             if the specified coordinates are not on the field.
+     * @throws IllegalStateException
+     *             if the game is already over.
      */
     public void uncover(int x, int y);
 }
